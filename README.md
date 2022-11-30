@@ -25,7 +25,7 @@ _All requirements for this project can be found in the following link:_
 
 Our system handles real time transactions of orders.
 
-We review transaction requests, that are the validated and filtered and in the end our processor provides real time data through a websocket connection with the client.
+We review transaction requests, that are then validated and filtered and in the end our processor provides real time data through a websocket connection with the client.
 
 ### 3.1 Example flow
 
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 ```
 
-This request will the be revieved by our transaction service, which will provide it with a unique id, and emit an event in to kafka.
+This request will then be revieved by our transaction service, which will provide it with a unique id, and emit an event in to kafka.
 
 The validator service then listens to this event using kafka streams and does validation on it. Ones it has been validated it will be sent to either the "invalid-transaction" topic or the "valid-trasaction" topic.
 

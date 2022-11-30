@@ -25,7 +25,7 @@ _All requirements for this project can be found in the following link:_
 
 Our system handles real time transactions of orders.
 
-We revieve transaction requests, that are the validated and filtered and in the end our processor provides real time data through a websocket connection with the client.
+We review transaction requests, that are the validated and filtered and in the end our processor provides real time data through a websocket connection with the client.
 
 ### 3.1 Example flow
 
